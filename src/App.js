@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import Header from './Header.js';
 import ImageList from './ImageList.js';
-import ImageItem from './ImageItem.js';
 import imageData from './data.js';
+import './bootstrap-reboot.min.css';
 import './App.css';
+import './gallery.css';
 
 export default class App extends Component {
   render() {
@@ -12,9 +13,8 @@ export default class App extends Component {
   
     return (
       <div>
-      <Header />
-      <ImageList />
-      { imageData.map(image => <ImageItem creature = {image} />) }
+        <Header />
+        <ImageList imageData={imageData} />
       </div>
     );
   }
