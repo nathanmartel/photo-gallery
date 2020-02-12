@@ -1,26 +1,21 @@
-import React from 'react';
+import React, { Component } from 'react';
 import logo from './logo.svg';
+import Header from './Header.js';
+import ImageList from './ImageList.js';
+import ImageItem from './ImageItem.js';
+import imageData from './data.js';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends Component {
+  render() {
+    // imageData.map(image => <ImageItem creature = {image} />);
+  
+    return (
+      <div>
+      <Header />
+      <ImageList />
+      { imageData.map(image => <ImageItem creature = {image} />) }
+      </div>
+    );
+  }
 }
-
-export default App;
