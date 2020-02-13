@@ -24,3 +24,16 @@ export default class SelectOptionItem extends Component {
 //     </ul>
 //     }
 // }
+
+// const selectOptions = keyWords.forEach(item => <option value="item">item</option>);
+
+// const quoteNodes = this.state.quotes.map(quote => <li className="quote-item" >
+// <h2>
+// <img src={quote.image}
+//   alt={quote.character} />
+// <span>{quote.character}</span>
+// </h2>
+// <quote>
+// {quote.quote}
+// </quote>
+// </li >)
